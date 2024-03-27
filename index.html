@@ -22,9 +22,58 @@
         text-align: center;
     }
 
-    .service-thumb img {
+     .service-thumb img {
         max-width: 100%; /* Ensure image does not exceed container width */
     }
+    .image-container {
+    background-image: url('/images/instagram.png');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.image1-container {
+    background-image: url('/images/project1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.image1-container::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(58, 58, 58, 0.39); /* 50% gray with 50% opacity */
+}
+.image2-container {
+    background-image: url('/images/project2.png');
+    background-size: cover;
+    background-position: center;
+}
+.image2-container::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(58, 58, 58, 0.39); /* 50% gray with 50% opacity */
+}
+.image-container::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(58, 58, 58, 0.39); /* 50% gray with 50% opacity */
+}
+
 </style>
 
     
@@ -277,39 +326,47 @@ http://www.templatemo.com/tm-498-stimulus
                     </a>
                 </div> -->
 
-                <div class="col-md-3 col-sm-6">
-                    <a href="https://shivanimishra370.github.io/ShopMe/" class="wow fadeInUp color-white service-thumb" data-wow-delay="1.2s">
-                        <h4  >Project 1</h4>
-                        <h3>ShopMe</h3>
-                        <p class="color-white">With Spring Boot, MySQL, and ReactJS. Created an Ecommerce Website ShopMe. Click to Navigate</p>
-                    </a>
-                </div>
                 
-                
+                <div class="image1-container col-md-3 col-sm-6">
+                    <a href="https://shivanimishra370.github.io/ShopMe/">
+                    <div class="wow fadeInUp color-white service-thumb" data-wow-delay="0.5s">
+                         <!-- <i class="fa fa-html5"></i> -->
+                         <h4 class="color-white">Project 1</h4>
+                              <h3>ShopMe</h3>
+                              <p class="color-white">Introducing ShopMe: an innovative e-commerce hub where convenience meets functionality. With seamless browsing, secure checkout, and personalized features, ShopMe ensures a hassle-free shopping journey. Experience the future of online retail today. <br>Click to navigate.</p>
+                                   
+                    </div>
+               </a>
+               </div>
 
-               <div class="bg-dark col-md-3 col-sm-6">
+               <div class="image2-container col-md-3 col-sm-6">
 
                     <a href="https://shivanimishra370.github.io/Shoppeum_website/">
-                    <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.6s">
-                         <i class="fa fa-table"></i>
-                         <h4>Project 2</h4>
+                    <div class="wow fadeInUp color-white service-thumb" data-wow-delay="0.8s">
+                         <!-- <i class="fa fa-table"></i> -->
+                         <h4 class="color-white">Project 2</h4>
                               <h3>Shoppeum</h3>
-                              <p class="color-white">Introducing Shoppeum, a dynamic Amazon-inspired frontend clone designed to offer seamless browsing
+                              <p class="color-white">Shoppeum, a dynamic Amazon-inspired frontend clone designed to offer seamless browsing
                                     and shopping experiences. Explore a familiar interface with a fresh twist, redefining online retail accessibility.
                                   <br> Click to Navigate</p>
                     </div>
                </a>
                </div>
 
-               <div class="bg-white col-md-3 col-sm-6">
-                    <div class="wow fadeInUp service-thumb" data-wow-delay="1.8s">
-                         <i class="fa fa-html5"></i>
-                              <h3>Coding</h3>
-                              <p>I excel in Java development, specializing in robust data structures and algorithms. My code is crafted to optimize performance and scalability, ensuring efficient solutions to complex problems.</p>
+               <div class="image-container col-md-3 col-sm-6">
+                    <a href="https://shivanimishra370.github.io/Insta/">
+                    <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.0s">
+                         <!-- <i class="fa fa-html5"></i> -->
+                         <h4 class="color-white">Project 3</h4>
+                              <h3>Instagram_clone</h3>
+                              <p class="color-white">I've created a specialized Instagram clone focused exclusively on image sharing. This platform offers users a streamlined experience dedicated solely to 
+                                   visual content, prioritizing seamless image-centric interactions for a more engaging social media experience.<br>Click To Navigate</p>
+                                   
                     </div>
+               </a>
                </div>
                <div class="bg-yellow col-md-3 col-sm-6">
-                    <div class="wow fadeInUp color-white service-thumb" data-wow-delay="0.8s">
+                    <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.2s">
                          <i class="fa fa-desktop"></i>
                               <h3>Technologies</h3>
                               <p class="color-white">
@@ -402,8 +459,9 @@ http://www.templatemo.com/tm-498-stimulus
                               <h1 class="color-white">Say hello..</h1>
                          </div>
 
+
                          <div id="contact-form">
-                              <form action="#template-mo" method="post">
+                              <form >
                                    <div class="wow fadeInUp" data-wow-delay="1s">
                                         <input name="fullname" type="text" class="form-control" id="fullname" placeholder="Your Name">
                                    </div>
@@ -418,6 +476,11 @@ http://www.templatemo.com/tm-498-stimulus
                                    </div>
                               </form>
                          </div>
+                         <div id="messageBox" style="display: none;">
+                              <p>Thank you for your message!</p>
+                         </div>
+                    </div>
+               </div>
 
                     </div>
                </div>
